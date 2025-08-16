@@ -4,7 +4,7 @@ from psycopg.rows import dict_row
 import schemas, auth, post
 from typing import List
 
-conn = psycopg.connect(host="localhost", dbname="FastApi", user="postgres", password="23042008", row_factory=dict_row)
+conn = psycopg.connect(host="fake", dbname="fake", user="fake", password="fake", row_factory=dict_row)
 cursor = conn.cursor()
 
 app = FastAPI()

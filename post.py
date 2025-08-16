@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import OAuth
 
 # Database connection 
-conn = psycopg.connect(host="localhost", dbname="FastApi", user="postgres", password="23042008", row_factory=dict_row)
+conn = psycopg.connect(host="fake", dbname="fake", user="fake", password="fake", row_factory=dict_row)
 cursor = conn.cursor()
 
 router = APIRouter(tags=["Post"])

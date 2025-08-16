@@ -5,7 +5,7 @@ from psycopg.rows import dict_row
 from utils import hash, verify
 from OAuth import create_access_token
 
-conn = psycopg.connect(host="localhost", dbname="FastApi", user="postgres", password="23042008", row_factory=dict_row)
+conn = psycopg.connect(host="fake", dbname="fake", user="fake", password="fake", row_factory=dict_row)
 cursor = conn.cursor()
 
 router = APIRouter(tags=["Auth"])
